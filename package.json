@@ -1,0 +1,34 @@
+{
+  "name": "online-judge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "start": "nodemon server.js",
+    "dev": "concurrently \" npm run client \" \" npm run start \" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mountstack/Online-Judge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mountstack/Online-Judge/issues"
+  },
+  "homepage": "https://github.com/mountstack/Online-Judge#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }, 
+  "engines": {
+    "node": "16.17.0"
+  }
+}
